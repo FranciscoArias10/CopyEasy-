@@ -165,13 +165,4 @@ Tu apoyo ayuda a mantener el proyecto activo y a seguir mejorando CopyEasy. ¡Gr
 
 ---
 
-## 🙏 Agradecimientos
-
-- [Expo](https://expo.dev) - Framework multiplataforma
-- [Supabase](https://supabase.com) - Backend as a Service
-- [Netlify](https://netlify.com) - Hosting web
-- Comunidad de React Native
-
----
-
 **⚡ CopyEasy - Comparte sin límites**
