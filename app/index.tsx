@@ -60,7 +60,7 @@ export default function HomeScreen() {
                 {Platform.OS === 'web' && (
                     <TouchableOpacity
                         style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border, marginTop: 24 }]}
-                        onPress={() => Linking.openURL('https://docs.google.com/uc?export=download&id=1hYbBYquX21NQDRi4jTaicaxPlj87OMEi')} // Google Drive Direct Link
+                        onPress={() => Linking.openURL('https://drive.google.com/uc?export=download&id=1OvNah_pa-cPsF99LCESD3h38J4etUdBn')} // Google Drive Direct Download
                         activeOpacity={0.8}
                     >
                         <View style={[styles.iconCircle, { backgroundColor: 'rgba(50, 255, 100, 0.1)' }]}>
