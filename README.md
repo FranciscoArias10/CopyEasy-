@@ -53,7 +53,7 @@ CopyEasy es una aplicación multiplataforma (Web + Android) que permite comparti
 ### **Opción 1: Usar la Web (Recomendado)**
 Accede directamente desde cualquier navegador:
 ```
-https://tu-sitio.netlify.app
+https://copyeasy.netlify.app/
 ```
 
 ### **Opción 2: Instalar en Android**
@@ -157,10 +157,10 @@ Tu apoyo ayuda a mantener el proyecto activo y a seguir mejorando CopyEasy. ¡Gr
 
 ---
 
-## �👨‍💻 Autor
+## Autor
 
 **Francisco Arias**
-- GitHub: [@FranciscoArias10](https://github.com/FranciscoArias10)
+- Instagram: https://www.instagram.com/francisco_arias.py/
 - Email: fariasp2@unemi.edu.ec
 
 ---
