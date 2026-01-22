@@ -75,6 +75,24 @@ export default function HomeScreen() {
                         <MaterialCommunityIcons name="download-circle-outline" size={24} color={theme.icon} />
                     </TouchableOpacity>
                 )}
+
+                {/* DONAR - SUPPORT THE PROJECT */}
+                <TouchableOpacity
+                    style={[styles.card, styles.donateCard, { backgroundColor: theme.surface, borderColor: '#FFD700' }]}
+                    onPress={() => Linking.openURL('https://paypal.me/FranciscoArias10')}
+                    activeOpacity={0.8}
+                >
+                    <View style={[styles.iconCircle, { backgroundColor: 'rgba(255, 215, 0, 0.1)' }]}>
+                        <MaterialCommunityIcons name="heart" size={32} color="#FFD700" />
+                    </View>
+                    <View style={styles.cardContent}>
+                        <Text style={[styles.cardTitle, { color: theme.text }]}>Apoyar el Proyecto</Text>
+                        <Text style={[styles.cardDescription, { color: '#FFD700', fontWeight: '600' }]}>
+                            ¿Te gusta CopyEasy? ¡Invítame un café! ☕
+                        </Text>
+                    </View>
+                    <MaterialCommunityIcons name="chevron-right" size={24} color="#FFD700" />
+                </TouchableOpacity>
             </View>
 
             <View style={styles.footer}>
@@ -120,6 +138,14 @@ const styles = StyleSheet.create({
         borderRadius: 24,
         borderWidth: 1,
         gap: 16,
+    },
+    donateCard: {
+        borderWidth: 2,
+        shadowColor: '#FFD700',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
+        elevation: 5,
     },
     iconCircle: {
         width: 56,

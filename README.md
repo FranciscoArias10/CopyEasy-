@@ -147,7 +147,17 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 ---
 
-## 👨‍💻 Autor
+## � Apoyar el Proyecto
+
+Si CopyEasy te ha sido útil y quieres apoyar su desarrollo, puedes invitarme un café ☕
+
+[![Donar con PayPal](https://img.shields.io/badge/PayPal-Donar-FFD700?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/FranciscoArias10)
+
+Tu apoyo ayuda a mantener el proyecto activo y a seguir mejorando CopyEasy. ¡Gracias! 🙏
+
+---
+
+## �👨‍💻 Autor
 
 **Francisco Arias**
 - GitHub: [@FranciscoArias10](https://github.com/FranciscoArias10)
