@@ -1,50 +1,167 @@
-# Welcome to your Expo app 👋
+# ⚡ CopyEasy
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Transferencia ultrarrápida de archivos entre dispositivos sin complicaciones.**
 
-## Get started
+CopyEasy es una aplicación multiplataforma (Web + Android) que permite compartir archivos, imágenes, textos y enlaces de forma instantánea entre cualquier dispositivo mediante salas temporales con códigos QR.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Características
 
-2. Start the app
+### 📤 **Envío Instantáneo**
+- Crea una sala con un código único
+- Genera un código QR para acceso rápido
+- Comparte el enlace directo con quien quieras
 
-   ```bash
-   npx expo start
-   ```
+### 📥 **Recepción Flexible**
+- Escanea el QR con la cámara
+- Ingresa el código manualmente
+- Accede desde cualquier navegador
 
-In the output, you'll find options to open the app in a
+### 📁 **Soporte Completo de Archivos**
+- ✅ **Imágenes** (JPG, PNG, GIF) - Previsualización instantánea
+- ✅ **Documentos** (PDF, Word, TXT) - Hasta 5MB
+- ✅ **Texto** - Hasta 30,000 caracteres
+- ✅ **Enlaces** - Detección automática y apertura directa
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🔒 **Privacidad y Seguridad**
+- 🗑️ **Auto-eliminación**: Las salas se destruyen automáticamente después de 24 horas de inactividad
+- 🚪 **Última persona**: Si el último usuario sale, la sala se elimina inmediatamente
+- 🔐 **Sin registro**: No se requiere cuenta ni datos personales
+- 🌐 **Conexión cifrada**: Comunicación segura mediante Supabase Realtime
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 🎨 **Diseño Moderno**
+- 🌙 Modo oscuro elegante
+- ⚡ Interfaz neón con colores cyan y púrpura
+- 📱 Totalmente responsive (móvil, tablet, desktop)
+- 🎯 Grid inteligente en web, lista en móvil
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠️ Tecnologías
 
-```bash
-npm run reset-project
+- **Frontend**: React Native + Expo Router
+- **Backend**: Supabase (Realtime Database + Presence)
+- **Estilos**: React Native StyleSheet
+- **Despliegue Web**: Netlify
+- **Despliegue Móvil**: EAS Build (Expo Application Services)
+
+---
+
+## 📦 Instalación
+
+### **Opción 1: Usar la Web (Recomendado)**
+Accede directamente desde cualquier navegador:
+```
+https://tu-sitio.netlify.app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### **Opción 2: Instalar en Android**
+Descarga el APK desde [GitHub Releases](https://github.com/FranciscoArias10/CopyEasy-/releases)
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🧑‍💻 Desarrollo Local
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Prerrequisitos
+- Node.js 18+
+- npm o yarn
 
-## Join the community
+### Configuración
 
-Join our community of developers creating universal apps.
+1. **Clona el repositorio**
+```bash
+git clone https://github.com/FranciscoArias10/CopyEasy-.git
+cd CopyEasy-
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+2. **Instala dependencias**
+```bash
+npm install
+```
+
+3. **Configura variables de entorno**
+Crea un archivo `.env` en la raíz:
+```env
+EXPO_PUBLIC_SUPABASE_URL=tu_url_de_supabase
+EXPO_PUBLIC_SUPABASE_ANON_KEY=tu_clave_anon
+```
+
+4. **Inicia el servidor de desarrollo**
+```bash
+# Web
+npm run web
+
+# Android/iOS
+npm start
+```
+
+---
+
+## 🏗️ Compilar para Producción
+
+### **Web**
+```bash
+npx expo export --platform web
+```
+Los archivos se generarán en la carpeta `dist/`
+
+### **Android APK**
+```bash
+eas build -p android --profile preview
+```
+
+---
+
+## 📱 Capturas de Pantalla
+
+### Pantalla Principal
+- Botones grandes para Enviar/Recibir
+- Descarga directa del APK (solo web)
+
+### Sala de Transferencia
+- Vista de tarjetas (web) / Lista (móvil)
+- Previsualización de imágenes
+- Botones de descarga/copiar/compartir
+
+### Escáner QR
+- Acceso rápido con la cámara
+- Entrada manual alternativa
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+1. Haz un fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit tus cambios (`git commit -m 'Añadir nueva funcionalidad'`)
+4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+## 👨‍💻 Autor
+
+**Francisco Arias**
+- GitHub: [@FranciscoArias10](https://github.com/FranciscoArias10)
+- Email: fariasp2@unemi.edu.ec
+
+---
+
+## 🙏 Agradecimientos
+
+- [Expo](https://expo.dev) - Framework multiplataforma
+- [Supabase](https://supabase.com) - Backend as a Service
+- [Netlify](https://netlify.com) - Hosting web
+- Comunidad de React Native
+
+---
+
+**⚡ CopyEasy - Comparte sin límites**
