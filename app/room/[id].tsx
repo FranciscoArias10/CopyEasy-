@@ -423,15 +423,39 @@ export default function RoomScreen() {
                         />
                     )}
 
+
                     {item.type === 'file' && (() => {
                         let fileName = 'Documento';
                         let size = '';
+                        let isImage = false;
+                        let imageData = '';
+
                         try {
                             const parsed = JSON.parse(item.content);
                             fileName = parsed.name;
                             size = parsed.size ? `(${(parsed.size / 1024).toFixed(0)} KB)` : '';
+
+                            // Check if it's actually an image
+                            if (parsed.data && parsed.data.startsWith('data:image')) {
+                                isImage = true;
+                                imageData = parsed.data;
+                            }
                         } catch (e) { }
 
+                        // If it's an image, render it as image
+                        if (isImage) {
+                            return (
+                                <TouchableOpacity onPress={() => downloadItem(item)}>
+                                    <Image
+                                        source={{ uri: imageData }}
+                                        style={{ width: '100%', height: 250, borderRadius: 8, backgroundColor: 'rgba(0,0,0,0.2)' }}
+                                        contentFit="contain"
+                                    />
+                                </TouchableOpacity>
+                            );
+                        }
+
+                        // Otherwise, render as document
                         return (
                             <TouchableOpacity onPress={() => downloadItem(item)} style={{ flexDirection: 'row', alignItems: 'center', gap: 12, padding: 12, backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: 12 }}>
                                 <View style={{ width: 40, height: 40, borderRadius: 8, backgroundColor: theme.surface, alignItems: 'center', justifyContent: 'center' }}>
