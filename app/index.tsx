@@ -60,7 +60,7 @@ export default function HomeScreen() {
                 {Platform.OS === 'web' && (
                     <TouchableOpacity
                         style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border, marginTop: 24 }]}
-                        onPress={() => Linking.openURL('/copyeasy.apk')} // Placeholder for file in public folder
+                        onPress={() => Linking.openURL('https://docs.google.com/uc?export=download&id=1hYbBYquX21NQDRi4jTaicaxPlj87OMEi')} // Google Drive Direct Link
                         activeOpacity={0.8}
                     >
                         <View style={[styles.iconCircle, { backgroundColor: 'rgba(50, 255, 100, 0.1)' }]}>

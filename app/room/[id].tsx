@@ -96,6 +96,7 @@ export default function RoomScreen() {
                     type: m.type as 'text' | 'image' | 'link' | 'file',
                     content: m.content,
                     timestamp: new Date(m.created_at).getTime(),
+                    sender: 'other' as 'me' | 'other'
                 }));
                 setMessages(mapped);
             }
