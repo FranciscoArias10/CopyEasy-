@@ -15,7 +15,7 @@ export default function HomeScreen() {
                 <Text style={[styles.title, { color: theme.text }]}>CopyEasy</Text>
             </View>
 
-            <Text style={[styles.subtitle, { color: theme.icon }]}>
+            <Text style={[styles.subtitle, { color: '#00E5FF' }]}>
                 Transferencia ultrarrápida entre dispositivos.
             </Text>
 
@@ -31,7 +31,7 @@ export default function HomeScreen() {
                     </View>
                     <View style={styles.cardContent}>
                         <Text style={[styles.cardTitle, { color: theme.text }]}>Enviar</Text>
-                        <Text style={[styles.cardDescription, { color: theme.icon }]}>
+                        <Text style={[styles.cardDescription, { color: '#00E5FF' }]}>
                             Crear una sala y generar código
                         </Text>
                     </View>
@@ -49,7 +49,7 @@ export default function HomeScreen() {
                     </View>
                     <View style={styles.cardContent}>
                         <Text style={[styles.cardTitle, { color: theme.text }]}>Recibir</Text>
-                        <Text style={[styles.cardDescription, { color: theme.icon }]}>
+                        <Text style={[styles.cardDescription, { color: '#00E5FF' }]}>
                             Escanear QR o ingresar código
                         </Text>
                     </View>
