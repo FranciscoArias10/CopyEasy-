@@ -139,15 +139,9 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
 5. Abre un Pull Request
 
----
 
-## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
----
-
-## � Apoyar el Proyecto
+## Apoyar el Proyecto
 
 Si CopyEasy te ha sido útil y quieres apoyar su desarrollo, puedes invitarme un café ☕
 
